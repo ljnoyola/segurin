@@ -37,3 +37,5 @@ if (!mostrarMensaje && mostrado) { || o
 }*/
 >>>>>>> d852d35a47f35b0dc354f6af099b8431b4e21c81
 
+/*var nombre_array=[valor1,valor2,valor3]
+allert(nombre_array[0])*/
