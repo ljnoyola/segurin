@@ -1,12 +1,3 @@
-//var variable1="hola", variable2="hola", variable3="adiosadlalldldd"
-//	alert(variable2>=variable3)
-
-/*var mostrarMensaje = false;
-var mostrado=true
-if (!mostrarMensaje && mostrado) { || o
-	alert('Entro')
-}*/
-
 /*completar las condiciones de los if del siguiente script 
 para que los mensajes de los alert() se muenstren siempre
 de forma correcta*/
@@ -14,8 +5,8 @@ de forma correcta*/
 var numero1= 5;
 var numero2=8;
 
-if (numero1<numero2) {
-	alert("Numero1 no es mayor que numero2"
+if (!(numero1>numero2)) {
+	alert("Numero1 no es mayor que numero2")
 }
 
 if (numero2>0){
