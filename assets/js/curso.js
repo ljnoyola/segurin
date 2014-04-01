@@ -7,3 +7,5 @@ if (!mostrarMensaje && mostrado) { || o
 	alert('Entro')
 }*/
 
+/*var nombre_array=[valor1,valor2,valor3]
+allert(nombre_array[0])*/
