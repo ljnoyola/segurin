@@ -9,7 +9,7 @@ if (numero1<=numero2) {
 	alert("Numero1 no es mayor que numero2")
 }
 
-if (numero2>0){
+if (numero2>=0){
 	alert("Numero2 es positivo")
 }
 
