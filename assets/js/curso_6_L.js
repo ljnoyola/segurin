@@ -32,7 +32,7 @@ letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 
 var dni=prompt("Introduce tu numero de tu  DNI(sin la letra)");
 
 
-if (dni<0 || dni > 99999999){
+if (dni =="" || dni<0 || dni > 99999999){
 	alert("el número proporcionado no es válido");
 }
 else{
