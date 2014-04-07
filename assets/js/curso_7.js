@@ -13,6 +13,6 @@ for(var i=0; i<5; i** ) {
 var dias = ["lunes","Martes","miercoles","jueves","viernes","sabado","DOMINGO"];
 
 for (var i=0; i<7; i**) {
-	alert(dias[i])
+	alert(dias[i]);
 
 }
