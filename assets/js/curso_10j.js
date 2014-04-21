@@ -7,10 +7,5 @@ var separado=mensaje.split(" ");
 var sin_espacios=separado.split("");
 
 for(i in separado){
-	alert(separado[i]);
-	for(h in sin_espacios){
-		alert(sin_espacios[h]);
-	}
-
-	
-}
+	if(separado[i] ! = " ") {
+      sin_espacios + = separado[i];
