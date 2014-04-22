@@ -148,22 +148,6 @@
         <div class="col-lg-4">
           <img src="assets/img/seguro1.jpg" class="img-rounded" width= "100%">
           
-
-           <div class="dropdown">
-     <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-    Dropdown <span class="caret"></span>
-      </a>
-
-
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-      <li>opcion</li>
-      <li>respuesta</li>
-      <li>contacto</li>
-      
-      </ul>
-     </div>  
-
-
           <h2>Seguro de Autos</h2>
           <p>Minimiza riesgos y compara nuestros seguros</p>
           <p><a id = "provisional" class="btn btn-default"  href="#" role="button">Cotizar &raquo;</a></p>
@@ -187,55 +171,27 @@
 
           <p><a class="btn btn-default" href="otro.html" role="button">Cotizar &raquo;</a></p>
 
-
             <!-- Button trigger modal -->
             <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-              Inforrmacion
+              Más información
             </button>
 
-            
-                  <!-- Modal -->
+            <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Informacion</h4>
+                    <h4 class="modal-title" id="myModalLabel">Ingresa un comentario</h4>
                   </div>
                   <div class="modal-body">
-                    El contrato de seguro es aquel por el que el asegurador se obliga, mediante el cobro de una prima y para el caso de que se produzca el evento cuyo riesgo es objeto de cobertura a indemnizar, dentro de los límites pactados, el daño producido al asegurado o a satisfacer un capital, una renta u otras prestaciones convenidas.
+                    ...
                   </div>
                   <div class="modal-footer">
-                    <button id='cerrar'>cerrar</button>
-                    
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#opciones">
-              Inforrmacion
-            </button>
-
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="opciones" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Informacion2</h4>
-                  </div>
-                  <div class="modal-body">
-                    El seguro supone la transferencia de riesgos que trata de eliminar algunas de las consecuencias económicas negativas de los siniestros, de forma que el importe de los daños o pérdidas que sufre una parte se distribuyen entre una comunidad de personas que la soporta de forma conjunta, con un efecto mucho menor que si el daño se presentara de forma individual.
-                  </div>
-                  <div class="modal-footer">
-                    <button id='salir'>Salir</button>
-                    <div class="dropdown">
-
-                    
+                    <button id='mas'>Saber más</button>
+                      
+                    <button id='cerrar'>Cerrar</button>
                   </div>
                 </div>
               </div>
@@ -244,36 +200,21 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-
-          <p name="prueba"><a class="btn btn-default" href="#" role="button" style:"display:'none';">Cotizar &raquo;</a></p>
-          <button class"btn" id="boton">Presioname</button>
-
-        </div>
-      </div>
-
-      <ul class=
 
       <div class="dropdown">
-     <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="www.google.com.mx">
-    Dropdown <span class="caret"></span>
-      </a>
-
-
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-      <li>opcion</li>
-      <li>respuesta</li>
-      <li>contacto</li>
-
-      </ul>
-     </div>
-
-          
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+          Dropdown <span class="caret"></span>
+        </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://facebook.com">Windows</a></li>
+            <li><a role="menuitem" tabindex="-1" href="http://facebook.com">Linux</a></li>
+            <li><a role="menuitem" tabindex="-1" href="http://facebook.com">Mac OS</a></li>
+          </ul>
+      </div>
 
 
 
-     
+
 
 
       <!-- FOOTER -->
@@ -297,56 +238,50 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
 
+    <script>
+      $( '#cerrar' ).click(function(){
+        $('#myModal').modal('hide')
+      });
+    </script>
 
-
-
-
-   <script>
-
-   /*function prfesioname() {
-    console.log('me presionaste')
-   }*/
-
-   $( "#cerrar" ).click(function() {
-
-    $('#myModal').modal('hide')
-
-
-
-
-    /*alert('me presionaste')*/
-
-
-   });
-
-   $( "#salir" ).click(function() {
-
-    $('#opciones').modal('hide')
-
-
-
-
-  
-
-
-   });
-
+    <script>
+      $( '#mas' ).click(function(){
+        $('#large').modal('show')
+      });
+    </script>
 
     
 
- 
+    
+<div class="modal fade bs-example-modal-lg" id='large'tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+
+              Overflowing text to show scroll behavior
+
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          <div class="modal-footer">
+            <button id='salir'>Cerrar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+      $( '#salir' ).click(function(){
+        $('#large').modal('hide')
+      });
     </script>
-
-
-
-
-
- 
-=======
  
 
->>>>>>> 9af166bd592ab9bb7410ae2091a42ca1195eb0ef
   </body>
 </html>
   
