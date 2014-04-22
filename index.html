@@ -148,6 +148,22 @@
         <div class="col-lg-4">
           <img src="assets/img/seguro1.jpg" class="img-rounded" width= "100%">
           
+
+           <div class="dropdown">
+     <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Dropdown <span class="caret"></span>
+      </a>
+
+
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li>opcion</li>
+      <li>respuesta</li>
+      <li>contacto</li>
+      
+      </ul>
+     </div>  
+
+
           <h2>Seguro de Autos</h2>
           <p>Minimiza riesgos y compara nuestros seguros</p>
           <p><a id = "provisional" class="btn btn-default"  href="#" role="button">Cotizar &raquo;</a></p>
@@ -171,28 +187,57 @@
           <img src="assets/img/seguro1.jpg" class="img-rounded" width= "100%">
           <h2>Seguro de Motocicletas</h2>
           <p>Somos especialistas Eligenos</p>
-<<<<<<< HEAD
+
           <p><a class="btn btn-default" href="otro.html" role="button">Cotizar &raquo;</a></p>
 
             <!-- Button trigger modal -->
             <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-              Launch demo modal
+              Inforrmacion
             </button>
 
-            <!-- Modal -->
+            
+                  <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <h4 class="modal-title" id="myModalLabel">Informacion</h4>
                   </div>
                   <div class="modal-body">
-                    ...
+                    El contrato de seguro es aquel por el que el asegurador se obliga, mediante el cobro de una prima y para el caso de que se produzca el evento cuyo riesgo es objeto de cobertura a indemnizar, dentro de los límites pactados, el daño producido al asegurado o a satisfacer un capital, una renta u otras prestaciones convenidas.
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button id='cerrar'>cerrar</button>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#opciones">
+              Inforrmacion
+            </button>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="opciones" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Informacion2</h4>
+                  </div>
+                  <div class="modal-body">
+                    El seguro supone la transferencia de riesgos que trata de eliminar algunas de las consecuencias económicas negativas de los siniestros, de forma que el importe de los daños o pérdidas que sufre una parte se distribuyen entre una comunidad de personas que la soporta de forma conjunta, con un efecto mucho menor que si el daño se presentara de forma individual.
+                  </div>
+                  <div class="modal-footer">
+                    <button id='salir'>Salir</button>
+                    <div class="dropdown">
+
+                    
                   </div>
                 </div>
               </div>
@@ -200,13 +245,29 @@
           
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-=======
+
+
           <p name="prueba"><a class="btn btn-default" href="#" role="button" style:"display:'none';">Cotizar &raquo;</a></p>
           <button class"btn" id="boton">Presioname</button>
 
         </div>
       </div>
->>>>>>> d4c86603a8f09105c8d927bda7eb0e971a794da1
+
+      <ul class=
+
+      <div class="dropdown">
+     <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="www.google.com.mx">
+    Dropdown <span class="caret"></span>
+      </a>
+
+
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li>opcion</li>
+      <li>respuesta</li>
+      <li>contacto</li>
+
+      </ul>
+     </div>
 
 
 
@@ -230,16 +291,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
-<<<<<<< HEAD
-=======
-
-
-   
-
-
-
-
-
 
 
 
@@ -250,9 +301,26 @@
     console.log('me presionaste')
    }*/
 
-   $(".btn" ).click(function() {
+   $( "#cerrar" ).click(function() {
 
-    alert('me presionaste')
+    $('#myModal').modal('hide')
+
+
+
+
+    /*alert('me presionaste')*/
+
+
+   });
+
+   $( "#salir" ).click(function() {
+
+    $('#opciones').modal('hide')
+
+
+
+
+  
 
 
    });
@@ -267,7 +335,6 @@
 
 
 
->>>>>>> d4c86603a8f09105c8d927bda7eb0e971a794da1
 
  
   </body>
