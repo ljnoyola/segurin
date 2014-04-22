@@ -171,12 +171,50 @@
 
           <p><a class="btn btn-default" href="otro.html" role="button">Cotizar &raquo;</a></p>
 
+            <!-- Button trigger modal -->
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Más información
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Ingresa un comentario</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+
+                    <button id='mas'>Saber más</button>
+                      
+                    <button id='cerrar'>Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
 
-     
+      <div class="dropdown">
+        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+          Dropdown <span class="caret"></span>
+        </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="http://facebook.com">Windows</a></li>
+            <li><a role="menuitem" tabindex="-1" href="http://facebook.com">Linux</a></li>
+            <li><a role="menuitem" tabindex="-1" href="http://facebook.com">Mac OS</a></li>
+          </ul>
+      </div>
+
+
+
+
 
 
       <!-- FOOTER -->
@@ -199,6 +237,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
+
+    <script>
+      $( '#cerrar' ).click(function(){
+        $('#myModal').modal('hide')
+      });
+    </script>
+
+    <script>
+      $( '#mas' ).click(function(){
+        $('#large').modal('show')
+      });
+    </script>
+
+    
+
+    
+<div class="modal fade bs-example-modal-lg" id='large'tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+
+              Overflowing text to show scroll behavior
+
+              Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+              Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+          <div class="modal-footer">
+            <button id='salir'>Cerrar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+      $( '#salir' ).click(function(){
+        $('#large').modal('hide')
+      });
+    </script>
  
 
   </body>
