@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -34,24 +33,24 @@
                 <span class="icon-bar"></span>
               </button>
 
-              <a style="font-size:30px; color:#1691E4"class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-paperclip" style="font-size:30px; color:#dfe3e4"></span></a>
+              <a style="font-size:30px; color:#1691E4"class="navbar-brand" href="#"><span class="glyphicon glyphicon-paperclip" style="font-size:30px; color:#dfe3e4"></span></a>
 
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html" style= "font-size:16px; ">Inicio</a></li>
-                <li><a href="about.html" style= "font-size:16px; ">Conocenos</a></li>
-                <li><a href="contacto.html"style= "font-size:16px;">Contacto</a></li>
+                <li class="active"><a href="#" style= "font-size:16px; ">Inicio</a></li>
+                <li><a href="#about" style= "font-size:16px; ">Conocenos</a></li>
+                <li><a href="#contact"style= "font-size:16px;">Contacto</a></li>
                 <li class="dropdown">
-                  <a href="#" style= "font-size:16px; "class="dropdown-toggle" data-toggle="dropdown">Servicios <b class="caret"></b></a>
+                  <a href="#" style= "font-size:16px; "class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#" "color:#999"></a></li>
-                    <li><a href="#">Centro de Soluciuones</a></li>
-                    <li><a href="#">Consulta de soluciones</a></li>
+                    <li><a href="#" "color:#999">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                   
-                    <li><a href="#">Soluciones Segurin</a></li>
-                    
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
               </ul>
@@ -74,7 +73,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img data-src="holder.js/300x500/auto/#1691E4:#1a88d2/text:SeguriN" alt="First slide" style="background-color:#1691E4">
+          <img data-src="holder.js/900x500/auto/#1691E4:#1a88d2/text:SeguriN" alt="First slide" style="background-color:#1691E4">
           <div class="container">
             <div  class="carousel-caption">
               <h1 style="font-size:90px; color:#dfe3e4">SeguriN</h1>
@@ -84,14 +83,15 @@
               <br />
               <br />
               
-              <a href="plantilla.html"><button type="button" class="btn btn-info" style="font-size:30px">
+              <button type="button" class="btn btn-info" style="font-size:30px">
                 <span class="glyphicon glyphicon-send"></span> Cotizar
-              </button></a>
+              </button>
               <br />
               <br />
             </div>
           </div>
         </div>
+
         <div class="item">
 
           <img data-src="holder.js/900x500/auto/e3e9eb:#dfe3e4/text:Vision" alt="Second slide" style="background-color:#1691E4">
@@ -147,100 +147,139 @@
       <div class="row">
         <div class="col-lg-4">
           <img src="assets/img/seguro1.jpg" class="img-rounded" width= "100%">
-          <h2>Seguro de Autos</h2>
-          <p></p>
-          <p><a id = "provisional" class="btn btn-default"  data-toggle="modal" data-target="#myModal" role="button">Más información &raquo;</a></p>
           
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Seguro de Autos</h4>
-                </div>
-                <div class="modal-body">
-                  Minimiza riesgos y compara nuestros seguros
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>                  
-                </div>
-              </div>
-            </div>
-          </div>
-            
+
+           <div class="dropdown">
+     <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Dropdown <span class="caret"></span>
+      </a>
+
+
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li>opcion</li>
+      <li>respuesta</li>
+      <li>contacto</li>
+      
+      </ul>
+     </div>  
+
+
+          <h2>Seguro de Autos</h2>
+          <p>Minimiza riesgos y compara nuestros seguros</p>
+          <p><a id = "provisional" class="btn btn-default"  href="#" role="button">Cotizar &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         
         <div class="col-lg-4">
           <img src="assets/img/seguro2.jpg" class="img-rounded" width= "100%">
+          
           <h2>Ventajas</h2>
-          <p><a id = "provisional" class="btn btn-default"  data-toggle="modal" data-target="#myModal1" role="button">Más información &raquo;</a></p>
+          <p>Nuestra filosofía se centra en 3 aspectos fundamentales:
+           <br />Tarifas reducidas y personalizadas.
+           <br /> Comodidad y rapidez en los trámites e inmediatez en las respuestas.
+          <br />Calidad en el servicio y las mejores coberturas.</p>
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Ventajas</h4>
-                </div>
-                <div class="modal-body">
-                 <p>Nuestra filosofía se centra en 3 aspectos fundamentales:
-                <br />Tarifas reducidas y personalizadas.
-                <br /> Comodidad y rapidez en los trámites e inmediatez en las respuestas.
-                <br />Calidad en el servicio y las mejores coberturas.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>                  
-                </div>
-              </div>
-            </div>
-          </div>
-            
-        </div><!-- /.col-lg-4 -->
-       
+          <p><a class="btn btn-default" href="#" role="button" onClick ="alert('me presionaste');" style:"display:'block';" oculta  >Cotizar &raquo;</a></p>
+        </div>
         <div class="col-lg-4">
+          <button class"btn" id="boton">Presioname</button>
+
+    
           <img src="assets/img/seguro1.jpg" class="img-rounded" width= "100%">
           <h2>Seguro de Motocicletas</h2>
-          
-          <p><a id = "provisional" class="btn btn-default"  data-toggle="modal" data-target="#myModal2" role="button">Más información &raquo;</a></p>
+          <p>Somos especialistas Eligenos</p>
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Ventajas</h4>
-                </div>
-                <div class="modal-body">
-                 <center>Somos especialistas Eligenos</center>
-                <div class="modal-footer">
-                
+          <p><a class="btn btn-default" href="otro.html" role="button">Cotizar &raquo;</a></p>
 
-                </div>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>                  
+            <!-- Button trigger modal -->
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Inforrmacion
+            </button>
+
+            
+                  <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Informacion</h4>
+                  </div>
+                  <div class="modal-body">
+                    El contrato de seguro es aquel por el que el asegurador se obliga, mediante el cobro de una prima y para el caso de que se produzca el evento cuyo riesgo es objeto de cobertura a indemnizar, dentro de los límites pactados, el daño producido al asegurado o a satisfacer un capital, una renta u otras prestaciones convenidas.
+                  </div>
+                  <div class="modal-footer">
+                    <button id='cerrar'>cerrar</button>
+                    
+                    
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-            
-        </div><!-- /.col-lg-4 -->        
+
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#opciones">
+              Inforrmacion
+            </button>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="opciones" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Informacion2</h4>
+                  </div>
+                  <div class="modal-body">
+                    El seguro supone la transferencia de riesgos que trata de eliminar algunas de las consecuencias económicas negativas de los siniestros, de forma que el importe de los daños o pérdidas que sufre una parte se distribuyen entre una comunidad de personas que la soporta de forma conjunta, con un efecto mucho menor que si el daño se presentara de forma individual.
+                  </div>
+                  <div class="modal-footer">
+                    <button id='salir'>Salir</button>
+                    <div class="dropdown">
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
           
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
-     
+
+
+          <p name="prueba"><a class="btn btn-default" href="#" role="button" style:"display:'none';">Cotizar &raquo;</a></p>
+          <button class"btn" id="boton">Presioname</button>
+
+        </div>
+      </div>
+
+      <ul class=
+
+      <div class="dropdown">
+     <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="www.google.com.mx">
+    Dropdown <span class="caret"></span>
+      </a>
+
+
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li>opcion</li>
+      <li>respuesta</li>
+      <li>contacto</li>
+
+      </ul>
+     </div>
+
+
 
       <!-- FOOTER -->
-      <hr>
       <footer>
-        <a href="https://www.twitter.com" class="btn btn-default btn-xs" role="button" ><i class="icon-twitter">@segurin Twitter</i></a>
         
+        <p name ="prueba" id ="prueba" class="pull-right"><a href="#""color:#5bc0de">Back to top</a></p>
         <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a><p><center style="font-size:20px; color:#dfe3e4"><a href="https://github.com/juanvaldes07">Juan Valdes</a>
         <br/><a href="https://github.com/ljnoyola" >Luis Navarrete</a></center></p></p>
          <br />
-
-         
+        
+        
       </footer>
 
     </div><!-- /.container -->
@@ -254,6 +293,50 @@
     <script src="assets/js/docs.min.js"></script>
 
 
+
+
+   <script>
+
+   /*function prfesioname() {
+    console.log('me presionaste')
+   }*/
+
+   $( "#cerrar" ).click(function() {
+
+    $('#myModal').modal('hide')
+
+
+
+
+    /*alert('me presionaste')*/
+
+
+   });
+
+   $( "#salir" ).click(function() {
+
+    $('#opciones').modal('hide')
+
+
+
+
+  
+
+
+   });
+
+
+    
+
+ 
+
+    </script>
+
+
+
+
+
+ 
   </body>
 </html>
   
